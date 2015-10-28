@@ -3,11 +3,12 @@
 <script src="https://code.angularjs.org/1.4.7/angular.min.js"></script>
 <script src="index.js"></script>
 <body ng-app="myApp">
-
     <div ng-controller="C1">
-        <h1>C1 controller scope.name: {{name}}</h1></br>
-        <input type="text" ng-model="name"></br>
-        <directive name=""></directive>
+        <h1>C1 controller scope.name: {{name}}</h1>
+        <div ng-if="true">
+            <h2>ng-if scope.name: {{name}}</h2>
+            <button ng-click="name='definitely not jacob'">create ng-if's scope.name property</button>
+        </div>
     </div>
 </body>
 </html>
