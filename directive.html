@@ -1,0 +1,8 @@
+<div ng-if="name.length !== 0">
+  <h1>Directive scope.name: {{name}}</h1>
+  </br>
+  <h1>Parent scope.name (c1 controller scope accessed from directive): {{$parent.name}}</h1>
+
+  <input type="text" ng-model="name">
+    name length: {{name.length}}
+</div>
